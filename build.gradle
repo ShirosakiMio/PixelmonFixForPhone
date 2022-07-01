@@ -1,0 +1,23 @@
+plugins {
+    id 'java'
+}
+
+group 'com.mio'
+version '1.0'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.0'
+    compileOnly files('libs/Pixelmon-1.16.5-9.0.2-universal.jar')
+}
+jar{
+    exclude('*net')
+}
+
+test {
+    useJUnitPlatform()
+}

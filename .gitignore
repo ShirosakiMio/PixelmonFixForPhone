@@ -1,1 +1,4 @@
-./libs
+libs/Pixelmon-1.16.5-9.0.2-universal.jar
+build/*
+.gradle
+.idea
